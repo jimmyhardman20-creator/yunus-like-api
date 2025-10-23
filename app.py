@@ -22,7 +22,7 @@ def load_tokens(server_name):
         elif server_name in {"BR", "US", "SAC", "NA"}:
             with open("token_br.json", "r") as f:
                 tokens = json.load(f)
-        else:
+        else server_name == "BD":
             with open("token_bd.json", "r") as f:
                 tokens = json.load(f)
         return tokens
