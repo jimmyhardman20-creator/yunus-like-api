@@ -124,7 +124,7 @@ def make_request(encrypt, server_name, token):
             url = "https://client.ind.freefiremobile.com/GetPlayerPersonalShow"
         elif server_name in {"BR", "US", "SAC", "NA"}:
             url = "https://client.us.freefiremobile.com/GetPlayerPersonalShow"
-        else server_name in {"BB"}:
+        else:
             url = "https://clientbp.ggblueshark.com/GetPlayerPersonalShow"
         edata = bytes.fromhex(encrypt)
         headers = {
