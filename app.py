@@ -225,8 +225,8 @@ def handle_requests():
                 before_like = 0
             app.logger.info(f"Likes before command: {before_like}")
 
-            if server_name_used == "IND":
-                url = "https://client.ind.freefiremobile.com/LikeProfile"
+            if server_name_used == "BD":
+                url = "https://client.bd.freefiremobile.com/LikeProfile"
             elif server_name_used in {"BR", "US", "SAC", "NA"}:
                 url = "https://client.us.freefiremobile.com/LikeProfile"
             else:
