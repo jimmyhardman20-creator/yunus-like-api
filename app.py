@@ -120,8 +120,8 @@ def enc(uid):
 
 def make_request(encrypt, server_name, token):
     try:
-        if server_name == "IND":
-            url = "https://client.ind.freefiremobile.com/GetPlayerPersonalShow"
+        if server_name == "BD":
+            url = "https://client.bd.freefiremobile.com/GetPlayerPersonalShow"
         elif server_name in {"BR", "US", "SAC", "NA"}:
             url = "https://client.us.freefiremobile.com/GetPlayerPersonalShow"
         else:
